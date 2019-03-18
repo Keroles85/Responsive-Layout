@@ -85,7 +85,6 @@ section#showcase p {
 }
 
 /* Newsletter Section */
-
 section#newsletter {
     padding: 15px;
     background-color: #7e685a;
@@ -130,4 +129,54 @@ footer {
     background-color: #7e685a;
     color: #fff;
     text-align: center;
+}
+
+/* Media Query Section */
+@media(max-width: 768px) {
+    header #branding, 
+    header nav, 
+    header nav ul li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    section#showcase h1 {
+        margin-top: 30px;
+    }
+
+    section#newsletter h1,
+    section#newsletter form {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    section#newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    section#newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    section#topics .column {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid #000; */
+    }
 }
